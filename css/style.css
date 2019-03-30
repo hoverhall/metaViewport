@@ -1,0 +1,341 @@
+html,
+body{
+	width: 100%; height: 100vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: Catamaran;
+	src: url(../fonts/Catamaran-Medium.ttf);
+}
+
+.conteiner_col{
+	width: 100%; height: 100%;
+}
+
+#preImg, #postImg{
+	--width: 1282px; --height: 669px;
+	--top: -80px;
+	width: var(--width);
+	height: var(--height);
+	top: var(--top);
+}
+
+header{
+	width: 100%;
+	height: 589px;
+	background: url(../img/header__background.jpg) no-repeat;
+	background-size: 100% 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#regi_signIn{
+	width: 350px;
+	height: 400px;
+}
+
+.in_fixed_block{
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+    justify-content: space-around;
+}
+
+p{
+	font-family: Catamaran;
+	font-size: 14pt;
+}
+#top_text{
+	text-align: center;
+	font-size: 25pt;
+	letter-spacing: 4px;
+	color: #303030;
+	width: 350px;
+}
+
+main{
+	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.text2{
+	margin: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.text_2{
+	width: 250px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.text_2 p{
+	text-align: center;
+}
+
+.big{
+	font-size: 18pt;
+	color: #00a8b2;
+}
+
+.bigbig{
+	font-size: 25pt;
+	color: #00a8b2;
+	font-weight: 900;
+}
+
+.text1{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#text1_text{
+	width: 700px;
+}
+
+#biiig{
+	margin-top: 30px;
+}
+
+footer{
+	width: 100%;
+	height: 121px;
+	background: #303030;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conteiner{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+
+.inv{
+	filter: contrast(100) invert(1);
+	margin: 5px;
+}
+
+#footLink{
+	text-decoration: none;
+	color: white;
+	font-family: Catamaran;
+}
+
+.footConteiner{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footText{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#reg{
+	width: 350px;
+	height: 400px;
+	background:#2e3e40;
+}
+
+.kn{
+	height: 25px;
+	padding: 5px;
+}
+
+#reg_now{
+	width: 315px;
+	height: 40px;
+	margin-left: 15px;
+    margin-top: 11px;
+    background-color: OrangeRed;
+    border-color: OrangeRed;
+    font-family:Catamaran;
+    font-size:22pt;
+    color:#2e3e3f;
+    letter-spacing: 3px;
+    font-weight: 900;
+    line-height: 14px;
+}
+
+#helogo{
+	width: 350px;
+}
+
+input{
+	color: white;
+	margin-left: 15px;
+	margin-top: 11px;
+	width: 300px;
+}
+
+#if{
+    margin-left: 26px;
+    margin-top: 11px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+@media (orientation: portrait) {
+	html,
+	body{
+		width: 100%;
+		height: 100%;
+	}
+
+	.in_fixed_block{
+		display: none;
+	}
+
+	header{
+		width: auto;
+	}
+
+	#text1_text{
+		width: auto;
+	}
+
+	.text2{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.text_2{
+		padding-top: 40px;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 910px) {
+	html,
+	body{
+		width: 100%;
+		height: 100%;
+	}
+
+	.in_fixed_block{
+		display: none;
+	}
+
+	header{
+		width: auto;
+		height: 500px;
+		background-size: 100% 150vh;
+	}
+
+	#text1_text{
+		width: auto;
+	}
+
+	.text_2{
+		padding-top: 40px;
+	}
+}
+
+@media (orientation: portrait)
+and (min-width: 319px)
+and (max-width: 569px) {
+	html,
+	body{
+		width: 100%;
+		height: 100%;
+	}
+
+	.in_fixed_block{
+		display: none;
+	}
+
+	header{
+		width: auto;
+		height: 440px;
+		background-size: 100% 150vh;
+	}
+
+	#text1_text{
+		width: auto;
+	}
+
+	.text_2{
+		padding-top: 40px;
+	}
+
+	#reg{
+	width: 300px;
+	height: 370px;
+	background:#2e3e40;
+	}
+
+	.kn{
+		height: 25px;
+		padding: 5px;
+	}
+
+	#reg_now{
+		width: 275px;
+		height: 40px;
+		margin-left: 15px;
+	    margin-top: 11px;
+	    background-color: OrangeRed;
+	    border-color: OrangeRed;
+	    font-family: Catamaran;
+	    font-size:22pt;
+	    color:#2e3e3f;
+	    letter-spacing: 3px;
+	    font-weight: 900;
+	    line-height: 14px;
+	}
+
+	#helogo{
+		width: 300px;
+	}
+
+	input{
+		color: white;
+		margin-left: 15px;
+		margin-top: 5px;
+		width: 260px;
+	}
+
+	#if{
+	    margin-left: 26px;
+	    margin-top: 11px;
+	    color: white;
+	    letter-spacing: 1px;
+	}
+
+	#footLogo{
+		width: 20%
+	}
+
+	.conteiner{
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+	}
+
+	.footConteiner{
+		padding-top: 10px;
+	}
+
+	footer{
+		height: 140px;
+	}
+}
